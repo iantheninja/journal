@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <title>Journal Flex</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Journal Flex</h1>
+    <hr>
+
+    <!-- a new journal entry is created here -->
+    <div class="row">
+      <h3>Make a journal entry today ...</h3>
+      <hr>
+
+      <div class="col-md-8 offset-md-2">
+        <form id="journal-entry-form">
+          <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" class="form-control" id="new-title">
+          </div>
+          <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" class="form-control" id="new-title">
+          </div>
+          <button class="btn btn-primary" type="submit">Make Entry</button>
+        </form>
+      </div>
+    </div>
+    
+    <!-- journal entries should show up here -->
+    <div class="row">
+      <div class="col-md-10">
+        <h2>Past journal entries</h2>
+        <ul id="entries"></ul>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</html>
